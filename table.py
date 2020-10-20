@@ -59,6 +59,7 @@ for regweb, t in enumerate((t1, t2), 1):
 
                 tb1 = TB1_RE.search(line)
                 if tb1:
+                    row['url'] = '-'
                     row['traceback'] = ''
                     while True:
                         line1 = next(g)
